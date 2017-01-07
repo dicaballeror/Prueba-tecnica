@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <assert.h>
 using namespace std;
 
 struct Operation {
@@ -25,6 +26,15 @@ struct Operation {
 		return w;
 	}
 };
+
+void testOperation() {
+	Operation x = Operation(10, 11, 12, 20);
+	assert(x.equalsTo(10, 11, 12));
+	x.updateW(25);
+	assert(x.getW() == 25);
+	assert(x.isInside(1, 1, 1, 100, 100, 100));
+	assert(!x.isInside(40, 40, 40, 45, 45, 45));
+}
 
 // Verifica si la operacion existe previamente en la misma posicion y de ser asi
 // actualiza el valor en esa posicion, en caso que no se haya actualizado antes
@@ -62,6 +72,8 @@ void doQuery ( vector < Operation > &O ) {
 }
 
 int main() {
+
+    testOperation();
     
     int testCases;
     int N, M;
