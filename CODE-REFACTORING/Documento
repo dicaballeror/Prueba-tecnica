@@ -1,0 +1,24 @@
+#######################################################################################################################
+# A continuación se describen las malas practicas de programación evidenciadas y las acciones tomadas para superarlas #
+#######################################################################################################################
+
+En el primer código del controlador se observan algunas malas prácticas de programación como lo son:
+- Comentarios de codigos obsoletos o sustituidos. 
+    Esto se considera un mal habito ya que confunde a los futuros desarrolladores que pueden revisar la funcionalidad y llegar
+    a algun tipo de confusión debido a la presencia de código comentado. Si se necesita volver a una funcionalidad pasada es 
+    preferible mirar el historial de versionamiento que mantener codigo comentado.
+- No mantener un único idioma para las variables.
+    En este caso hago referencia a la variable $servicio ya que a lo largo del código se evidencia que todo se nombró en ingles
+    excepto por esa variable. En general, a menos que sea extrictamente necesario, se prefiere mantener un único idioma para 
+    los nombres de las variables
+- Mantener valores constantes a lo largo del código
+    Este mal hábito conlleva a futuros errores a la hora de mantener y modificar un código en el futuro ya que estos valores 
+    con el tiempo pueden llegar a cambiar y buscarlos uno a uno dentro del código se presta para que se omita un valor por
+    cambiar y genere bugs despues del mantenimiento o modificación del código sin haber cambiado nada en la funcionalidad
+    
+Para superar estas malas practicas encontradas se tomaron las siguientes medidas respectivamente
+- Eliminar todo el codigo comentado y comentarios sin sentido que solamente el primer programador entenderia
+- Cambiar el nombre de la variable en español a su respectivo nombre en ingles
+- Crear constantes al inicio del código y reemplazando cada aparición de cada constante en su lugar respectivo para que en
+  futuros mantenimientos del código sea mas fácil y menos propenso a errores la actualización del mismo como se explicó
+  anteriormente
