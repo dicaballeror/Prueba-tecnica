@@ -1,1 +1,21 @@
+¿En qué consiste el principio de responsabilidad única? ¿Cuál es su propósito?
 
+El principio de responsabilidad única consiste en la asignación a una clase de una única responsabilidad. Cuando
+hablamos de responsabilidad hacemos referencia a un motivo de cambio, es decir a que las razones que nos lleven
+a modificar una clase sean solo una, asegurando que esta clase cumpla con su responsabilidad y centralizando cada
+responsabilidad en una sola clase.
+El proposito de este principio es separar las clases al nivel mas granular posible de tal manera que se disminuya
+la sensibilidad al cambio de las clases y su funcionamiento, asegurando un codigo mantenible.
+
+¿Qué carateristicas tiene según tu opinión "buen" código o código limpio?
+
+En mi opinion un código limpio es un código que se auto-explica, que no necesita que la persona que lo escribió
+esté presente para que un tercero lo logre entender. Dentro de esta autonomia para ser entendido es necesario que
+un buen código haga uso de buenas practicas de programación, empezando por las mas basicas como lo pueden ser 
+identar el código adecuadamente hasta comentarios en lugares donde se crea se pueden prestar para confusión debido
+a la lógica del código. De igual manera un código limpio en mi opinión es aquel que, ademas de poderse entender, para
+alguien que no lo ha visto nunca se logra entender en un tiempo razonable.
+Todo esto va añadido al hecho que sea un código libre de errores/bugs y que se ajusta a los parametros de desarrollo
+del grupo de trabajo ya que es primordial que los compañeros de equipo (quienes están mas propensos a leer
+este codigo) tengan los mismos estandares de programación como por ejemplo la asignación de nombres en CamelCase que 
+el desarrollador que escribe el código limpio.
